@@ -1,20 +1,20 @@
-# react-postprocessing
+# react-postprocess
 
-[![Version](https://img.shields.io/npm/v/@react-three/postprocessing?style=flat&colorA=000000&colorB=000000)](https://www.npmjs.com/package/@react-three/postprocessing)
-[![Storybook](https://img.shields.io/static/v1?message=Storybook&style=flat&colorA=000000&colorB=000000&label=&logo=storybook&logoColor=ffffff)](https://pmndrs.github.io/react-postprocessing)
-[![Downloads](https://img.shields.io/npm/dt/@react-three/postprocessing.svg?style=flat&colorA=000000&colorB=000000)](https://www.npmjs.com/package/@react-three/postprocessing)
+[![Version](https://img.shields.io/npm/v/@react-three/postprocess?style=flat&colorA=000000&colorB=000000)](https://www.npmjs.com/package/@react-three/postprocess)
+[![Storybook](https://img.shields.io/static/v1?message=Storybook&style=flat&colorA=000000&colorB=000000&label=&logo=storybook&logoColor=ffffff)](https://pmndrs.github.io/react-postprocess)
+[![Downloads](https://img.shields.io/npm/dt/@react-three/postprocess.svg?style=flat&colorA=000000&colorB=000000)](https://www.npmjs.com/package/@react-three/postprocess)
 [![Discord Shield](https://img.shields.io/discord/740090768164651008?style=flat&colorA=000000&colorB=000000&label=discord&logo=discord&logoColor=ffffff)](https://discord.gg/ZZjjNvJ)
-[![Open in GitHub Codespaces](https://img.shields.io/static/v1?&message=Open%20in%20%20Codespaces&style=flat&colorA=000000&colorB=000000&label=GitHub&logo=github&logoColor=ffffff)](https://github.com/codespaces/new?template_repository=pmndrs%2Freact-postprocessing)
+[![Open in GitHub Codespaces](https://img.shields.io/static/v1?&message=Open%20in%20%20Codespaces&style=flat&colorA=000000&colorB=000000&label=GitHub&logo=github&logoColor=ffffff)](https://github.com/codespaces/new?template_repository=pmndrs%2Freact-postprocess)
 
-`react-postprocessing` is a
-[postprocessing](https://github.com/pmndrs/postprocessing) wrapper for
+`react-postprocess` is a
+[postprocess](https://github.com/pmndrs/postprocess) wrapper for
 [@react-three/fiber](https://github.com/pmndrs/react-three-fiber). This is not
 (yet) meant for complex orchestration of effects, but can save you
 [hundreds of LOC](https://twitter.com/0xca0a/status/1289501594698960897) for a
 straight forward effects-chain.
 
 ```bash
-npm install @react-three/postprocessing
+npm install @react-three/postprocess
 ```
 
 <p align="center">
@@ -25,10 +25,7 @@ npm install @react-three/postprocessing
   <i>These demos are real, you can click them! They contain the full code, too. 📦</i>
 </p>
 
-#### Why postprocessing and not three/examples/jsm/postprocessing?
-
-From
-[https://github.com/pmndrs/postprocessing](https://github.com/pmndrs/postprocessing#performance)
+#### Why postprocess and not three/examples/jsm/postprocess?
 
 > This library provides an EffectPass which automatically organizes and merges
 > any given combination of effects. This minimizes the amount of render
@@ -42,22 +39,22 @@ From
 > the screen diagonal. This is especially beneficial for GPGPU passes and
 > effects that use complex fragment shaders.
 
-Postprocessing also supports srgb-encoding out of the box, as well as WebGL2
-MSAA (multi sample anti aliasing), which is react-postprocessing's default, you
+Postprocess also supports srgb-encoding out of the box, as well as WebGL2
+MSAA (multi sample anti aliasing), which is react-postprocess's default, you
 get high performance crisp results w/o jagged edges.
 
 #### What does it look like?
 
 Here's an example combining a couple of effects
-([live demo](https://codesandbox.io/s/react-postprocessing-dof-blob-pqrpl?)).
+([live demo](https://codesandbox.io/s/react-postprocess-dof-blob-pqrpl?)).
 
-<a href="https://codesandbox.io/s/react-postprocessing-dof-blob-pqrpl?" target="_blank" rel="noopener">
+<a href="https://codesandbox.io/s/react-postprocess-dof-blob-pqrpl?" target="_blank" rel="noopener">
 <img src="bubbles.jpg" alt="Bubbles Demo" />
 </a>
 
 ```jsx
 import React from 'react'
-import { Bloom, DepthOfField, EffectComposer, Noise, Vignette } from '@react-three/postprocessing'
+import { Bloom, DepthOfField, EffectComposer, Noise, Vignette } from '@react-three/postprocess'
 import { Canvas } from '@react-three/fiber'
 
 function App() {
@@ -77,5 +74,5 @@ function App() {
 
 ## Documentation
 
-- [react-postprocessing docs](https://docs.pmnd.rs/react-postprocessing)
-- [postprocessing docs](https://pmndrs.github.io/postprocessing/public/docs/)
+- [react-postprocess docs](https://docs.pmnd.rs/react-postprocess)
+- [postprocess docs](https://pmndrs.github.io/postprocess/public/docs/)
